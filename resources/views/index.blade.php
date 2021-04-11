@@ -17,7 +17,7 @@
  
     <div>
         @csrf
-        <table class="table ml-3 mr-3">
+        <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Nome</th>

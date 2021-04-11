@@ -5,14 +5,36 @@ Nesse projeto é possível realizar o gerenciamento de um banco de dados que con
 
 ## Instalação
 
-Para a execução do projeto, é preciso ter instalado o framework de PHP Laravel, o que pode ser feito com auxilio da ferramenta de gerenciamento [Composer](https://getcomposer.org/). Além disso, é necessário ter a ferramenta [xampp](https://www.apachefriends.org/pt_br/download.html) ou similar para criação de um servidor local. Após a instalação do laravel e execução do servidor, deve-se ir na pasta do repositório no Prompt de Comando e executar o seguinte:
+Para a execução do projeto, é preciso ter instalado o framework de PHP Laravel, o que pode ser feito com auxilio da ferramenta de gerenciamento [Composer](https://getcomposer.org/). Além disso, é necessário ter a ferramenta [xampp](https://www.apachefriends.org/pt_br/download.html) ou similar para criação de um servidor local. 
 
+## Importação do Banco de Dados
+
+Primeiramente, após inicialização do Apache e MySQL pelo xampp, deve-se importar o arquivo "laravel.sql" para um banco de dados chamado "laravel" em http://localhost/phpmyadmin.
+
+## Execução do projeto 
+
+Após a instalação do laravel, execução do servidor e importação do banco de dados, deve-se ir na pasta do repositório no Prompt de Comando e executar os seguintes:
+
+```sh
+composer update
+```
 
 ```sh
 php artisan serve
 ```
 
 Após a execução, será possível acessar o projeto pelo link http://localhost:8000/users
+
+OBS: caso ao realizar o composer update ocorra o erro "500" ao abrir o link indicado acima, basta executar os seguintes comandos na pasta do projeto:
+
+```sh
+copy .env.example .env
+```
+```sh
+php artisan key:generate
+```
+
+Logo após, ele irá funcionar normalmente.
 
 ## Exemplo de uso
 
