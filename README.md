@@ -42,9 +42,8 @@ Na tela inicial, para cadastrar um novo usuário é preciso clicar no botão de 
 
 Ao lado dos nomes dos usuários listados na página inicial, há as opções de "Visualizar", "Editar" e "Deletar". Na opção de "Visualizar", será redirecionado à uma nova página constando todas as informações do usuário informadas na hora do cadastro.  Na opção "Editar", será possível mudar todas essas informações. Por fim, na opção "Deletar", o usuário será apagado do banco, não sendo mais listado na página inicial.
 
-## Banco de Dados
+## Seed para testes 
 
-Na página inicial, há um arquivo chamado "laravel.sql" contendo o banco de dados utilizado para execução do projeto, podendo ser importado para o phpmyadmin utilizando o xampp.
 Para serem realizados testes no projeto, é possível utilizar uma seed para gerar dados automaticamente na tabela usuários. Para isso, deve-se acessar a pasta do repositório no Prompt de Comando, e executar: 
 
 ```sh
@@ -55,5 +54,5 @@ php artisan db:seed
 
 Gabriela Melo Silva – [@Gabriela Melo Silva] gabrielamsilva02@gmail.com
 
-https://github.com/gabrielasil/crudProject
+https://github.com/gabrielasil/CRUDLaravel
 
